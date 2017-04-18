@@ -19,7 +19,7 @@ function pgNext(rows, page_size) {
     if (page_size === 0) {
         throw new Error('page_size ZERO is not allowed')
     } else if (!isNonNegativeInteger(rows) || !isNonNegativeInteger(page_size)) {
-        throw new Error('non-negative integers is required.')
+        throw new Error('non-negative integers is required')
     }
     var factor = rows / page_size;
     var mod = rows % page_size;
