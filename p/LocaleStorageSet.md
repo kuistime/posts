@@ -1,3 +1,6 @@
+LocaleStorageSet
+====
+
 ```javascript
 /**
  * Operate localStorage like an Array
