@@ -1,4 +1,4 @@
-LocaleStorageSet
+像操作数组那样使用localStorage
 ====
 
 ```javascript
