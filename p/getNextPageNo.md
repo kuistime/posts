@@ -1,3 +1,6 @@
+无限滚动（infinite-scroll）加载中的页码计算
+====
+
 ```javascript
 /**
  * 是否非负整数
