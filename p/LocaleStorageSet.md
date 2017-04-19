@@ -1,3 +1,4 @@
+```javascript
 /**
  * Operate localStorage like an Array
  * 
@@ -74,3 +75,4 @@ class LocaleStorageSet {
         return this._read()
     }
 }
+```
