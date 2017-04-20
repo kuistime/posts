@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .autoscroll-container{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-height: 640px;
+            overflow-y: hidden;
+        }
+        .autoscroll-bg{
+            background-image: url(//img.kuistime.com/p/sohp-grid-resized.jpg);
+            padding-top: 128.1770833333333%;
+            -webkit-animation: backgroundScroll 256s linear infinite;
+            animation: backgroundScroll 256s linear infinite;
+            z-index: 0;
+            margin-top: -1px;
+        }
+        .autoscroll-overlay{
+            z-index: 1;
+            background-color: rgba(0,0,0,.35);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        @-webkit-keyframes backgroundScroll {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+            to {
+                -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+            }
+        }
+
+        @keyframes backgroundScroll {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+            to {
+                -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="autoscroll-container">
+    <div class="autoscroll-bg"></div>
+    <div class="autoscroll-bg"></div>
+    <div class="autoscroll-overlay"></div>
+</div>
+
+
+</body>
+</html>
