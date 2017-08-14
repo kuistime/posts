@@ -1,21 +1,11 @@
 ### IMPL
 
 ```javascript
-// call stack
-function gpw1(len){
-  const arr = [];
-  while(len--){
-    arr.push(String.fromCharCode(Math.floor(Math.random()*93)+32))
-  }
-  return arr.join('');
-}
-
-// temp value
-function gpw2(len){
+function gpw(len){
   const arr = [];
   while(len--){
     const r = Math.random();
-    const n = Math.floor(r*93) + 32;
+    const n = Math.floor(r * 93) + 32;
     const c = String.fromCharCode(n);
     arr.push(c);
   }
@@ -27,14 +17,9 @@ function gpw2(len){
 ### TEST
 
 ```javascript
-// test
-var i = 1e4;
-var start;
-var end;
-console.log(start = Date.now());
+var i = 10;
 while(i--){
-  gpw1(32);
+  let pw = gpw1(32);
+  console.log(pw);
 }
-console.log(end = Date.now());
-console.log(end-start);
 ```
