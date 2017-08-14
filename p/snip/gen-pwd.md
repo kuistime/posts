@@ -19,7 +19,7 @@ function gpw(len){
 ```javascript
 var i = 10;
 while(i--){
-  let pw = gpw1(32);
+  let pw = gpw(32);
   console.log(pw);
 }
 ```
