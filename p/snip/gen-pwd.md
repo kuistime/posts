@@ -28,9 +28,9 @@ function gpw2(len){
 
 ```javascript
 // test
-let i = 1e4;
-let start;
-let end;
+var i = 1e4;
+var start;
+var end;
 console.log(start = Date.now());
 while(i--){
   gpw1(32);
