@@ -1,3 +1,5 @@
+### IMPL
+
 ```javascript
 // call stack
 function gpw1(len){
@@ -20,7 +22,19 @@ function gpw2(len){
   return arr.join('');
 }
 
-gpw2(32)
-gpw2(32)
+```
 
+### TEST
+
+```javascript
+// test
+let i = 1e4;
+let start;
+let end;
+console.log(start = Date.now());
+while(i--){
+  gpw1(32);
+}
+console.log(end = Date.now());
+console.log(end-start);
 ```
